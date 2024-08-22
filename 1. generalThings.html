@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Learn HTML CSS">
+    <meta name="author" content="Eren Akkoç">
+    <meta http-equiv="refresh" content="30">
+    <title>Learn HTML Webpage</title>
+    <link rel="icon" type="image/x-icon" href="/source/image2.png">
+    <style>
+        .City {
+            background-color: lightblue;
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;
+        }
+        #City2 {
+            background-color: lightcoral;
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1> HTML Öğreten WebSitesi</h1>
+
+    <h2>HTML Nedir ?</h2>
+    <p>
+        Bu web sitesi HTML öğrenmek isteyenler için hazırlanmıştır. 
+        HTML, web sayfalarını oluşturmak için kullanılan bir işaretleme dilidir. 
+        HTML, web sayfalarının içeriğini yapısını belirlemek için kullanılır. 
+        HTML, Hyper Text Markup Language'ın kısaltmasıdır.
+    </p>
+
+    <a href="#son">Sayfa Sonuna İn</a>
+
+    <h2>HTML Etiketleri</h2>
+    <div>
+        <h3>1.Yapısal Etiketler</h3>
+        <xmp>
+            <html>: Tüm HTML belgesini saran ana etiket.
+            <head>: Sayfanın meta bilgilerini içerir.
+            <title>: Tarayıcı sekmesinde görünen başlık.
+            <body>: Sayfanın görünen içeriğini içerir.
+            <header>: Sayfanın üst kısmındaki başlık bölgesini belirtir.
+            <nav>: Gezinme menüsünü belirtir.
+            <main>: Sayfanın ana içeriğini belirtir.
+            <section>: İçerik bölümlerini belirtir.
+            <article>: Bağımsız, kendine ait bir içerik parçasını belirtir.
+            <aside>: Ana içerikten bağımsız, ek bilgi sağlayan içerik (örneğin, kenar çubuğu).
+            <footer>: Sayfanın alt kısmındaki bölümü belirtir.
+        </xmp>
+
+        <h3>2.Metin Formatlama Etiketleri</h3>
+        <xmp>
+            <h1>, <h2>, <h3>, <h4>, <h5>, <h6>: Başlık etiketleri (h1 en büyük, h6 en küçük).
+            <p>: Paragraf.
+            <span>: Satır içi metin veya öğeler için kullanılır.
+            <div>: Blok düzeyinde bölümleme için kullanılır.
+            <strong>: Kalın ve vurgulu metin.
+            <em>: İtalik ve vurgulu metin.
+            <b>: Kalın metin.
+            <i>: İtalik metin.
+            <u>: Altı çizili metin.
+            <mark>: Vurgulanan metin (örneğin, sarı renkle).
+            <small>: Küçük boyutlu metin.
+            <blockquote>: Alıntı metin.
+            <pre>: Önceden biçimlendirilmiş metin (boşluklar korunur).
+            <code>: Kod parçaları için kullanılır.
+        </xmp>
+
+        <h3>3.Liste Etiketleri</h3>
+        <xmp>
+            <ul>: Sırasız liste (madde işaretli).
+            <ol>: Sıralı liste (numaralı).
+            <li>: Liste öğesi.
+            <dl>: Tanım listesi.
+            <dt>: Tanım başlığı.
+            <dd>: Tanım açıklaması.
+        </xmp>
+
+        <h3>4.Bağlantı ve Medya Etiketleri</h3>
+        <xmp>
+            <a>: Bağlantı (link).
+            <img>: Görsel.
+            <video>: Video oynatma.
+            <audio>: Ses oynatma.
+            <source>: Medya kaynağı belirtme (video veya audio için).
+            <iframe>: Sayfa içinde başka bir web sayfasını gömme.
+            <figure>: Resim veya medya içeren içerik.
+            <figcaption>: Figure etiketine ait açıklama.
+        </xmp>
+
+        <h3>5. Tablo Etiketleri</h3>
+        <xmp>
+            <table>: Tablo oluşturma.
+            <tr>: Tablo satırı.
+            <td>: Tablo hücresi (veri hücresi).
+            <th>: Tablo başlığı hücresi.
+            <thead>: Tablo başlık grubu.
+            <tbody>: Tablo gövdesi.
+            <tfoot>: Tablo alt kısmı.
+            <caption>: Tablo başlığı.
+        </xmp>
+
+        <h3>6.Form Etiketleri</h3>
+        <xmp>
+            <form>: Form oluşturma.
+            <input>: Giriş alanı (text, password, radio, checkbox, vb.).
+            <textarea>: Çok satırlı metin girişi.
+            <button>: Buton.
+            <select>: Açılır liste.
+            <option>: Seçenek.
+            <label>: Giriş alanı için etiket.
+            <fieldset>: Form alanlarını gruplama.
+            <legend>: Fieldset için başlık.
+        </xmp>
+
+        <h3>7.Semantik Etiketler</h3>
+        <xmp>
+            <time>: Tarih veya saat belirtir.
+            <address>: İletişim bilgilerini belirtir.
+            <cite>: Eser adı veya referans.
+            <abbr>: Kısaltma.
+        </xmp>
+
+        <h3>8.HTML5 Multimedya ve Gömme Etiketleri</h3>
+        <xmp>
+            <canvas>: Grafik ve çizim oluşturma (JavaScript ile).
+            <embed>: Harici içerik gömme.
+            <object>: Harici uygulamalar veya medya (örneğin Flash).
+        </xmp>
+
+        <h3>9. Meta ve Başlık Bilgileri</h3>
+        <xmp>
+            <meta>: Sayfa hakkında meta bilgi (charset, viewport vb.).
+            <link>: Dış kaynaklara bağlantı (CSS dosyası gibi).
+        </xmp>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br>
+
+    <h2>Html Links</h2>
+    <p>
+        <a href="https://erenakkoc.com.tr">Website</a> şeklindeki linkler için aşağıdaki şekilde tanımlıyoruz.
+        <xmp>
+            <a href="https://erenakkoc.com.tr">Website</a>
+        </xmp>
+    </p>
+
+    <h2>Html Images</h2>
+    <p>
+        <img src="https://picsum.photos/200" alt="Resim" width="200" height="200">
+        şeklindeki resimler için aşağıdaki şekilde tanımlıyoruz.
+        <xmp>
+            <img src="https://picsum.photos/200" alt="Resim" width="200" height="200">
+        </xmp>
+    </p>
+
+    <br><br>
+
+    <p style="color: brown;">Kırmızı Bir paragrafım</p>
+    <xmp>
+        <p style="color: brown;">Kırmızı Bir paragrafım</p>
+    </xmp>
+
+    <br><br>
+
+    <p title="Çok ilginç">Paragrafın üstüne gelince sürpriz bekliyor.</p> 
+    <xmp> 
+        <p title="Çok ilginç">Paragrafın üstüne gelince sürpriz bekliyor.</p> 
+    </xmp>
+
+
+    <br><br>
+
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <xmp>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+    </xmp>
+
+    <br><br>
+
+    <h1 style="font-size:60px;">Heading 1</h1>
+    <xmp>
+        <h1 style="font-size:60px;">Heading 1</h1>
+    </xmp>
+
+    <br><br>
+
+    <p>
+        Merhaba bu uzun ve çok uzun bir paragraf olacak.
+        Merhaba bu uzun ve çok uzun bir paragraf olacak.
+        Merhaba bu uzun ve çok uzun bir paragraf olacak.
+    </p>
+    <xmp>
+        <p>
+            Merhaba bu uzun ve çok uzun bir paragraf olacak.
+            Merhaba bu uzun ve çok uzun bir paragraf olacak.
+            Merhaba bu uzun ve çok uzun bir paragraf olacak.
+        </p>
+    </xmp>
+
+    Bu şekilde olmaması için ya <xmp><br></xmp> etiketini kullanabiliriz ya da <xmp><pre></pre></xmp> ile yapabiliriz.
+
+    <pre>
+        <p>
+            Merhaba bu uzun ve çok uzun bir paragraf olacak.
+            Merhaba bu uzun ve çok uzun bir paragraf olacak.
+            Merhaba bu uzun ve çok uzun bir paragraf olacak.
+        </p>
+    </pre>
+    <xmp>
+        <pre>
+            <p>
+                Merhaba bu uzun ve çok uzun bir paragraf olacak.
+                Merhaba bu uzun ve çok uzun bir paragraf olacak.
+                Merhaba bu uzun ve çok uzun bir paragraf olacak.
+            </p>
+        </pre>
+    </xmp>
+
+    Bu şekilde aynı yazıldığı şekilde görüntülenir.
+
+    <br><br><br>
+
+    Style yapılandırmaları için <xmp>style="property:value;"</xmp> şeklinde kullanılır.
+
+    <br><br><br>
+
+    <p style="background-color: aqua;">Bu paragrafın arka plan rengi aqua olacaktır.</p>
+
+    <xmp>
+        <p style="background-color: aqua;">
+            Bu paragrafın arka plan rengi aqua olacak.
+        </p>
+    </xmp>
+
+    <br><br><br>
+
+    <p style="font-family:courier;">This is a paragraph.</p>
+    <p style="text-align:center;">Centered paragraph.</p>
+
+    <br><br><br>
+
+    <b>This text is bold</b><br>
+    <strong>This text is important!</strong><br>
+    <i>This text is italic</i><br>
+    <em>This text is emphasized</em><br>
+    <mark>This text is marked</mark><br>
+    <small>This text is small</small><br>
+    <del>This text is deleted</del><br>
+    <ins>This text is inserted</ins><br>
+    <sub>This text is subscripted</sub><br>
+    <sup>This text is superscripted</sup><br>
+
+    <br><br><br>
+
+    <p>Aıntılar şu şekilde yapılır.</p>
+    <p>Here is a quote from WWF's website:</p>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+    For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+    </blockquote>
+
+    <br><br><br>
+
+    <p>Diğer bir alıntı gösterme türü</p>
+    <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+    <br><br><br>
+
+    <p>Kısaltmalar şu şekilde yapılır.</p>
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+    <br><br><br>
+
+    <p>Adres bilgileri şu şekilde yapılır.</p>
+    <address>
+        Written by Eren.<br>
+        Visit us at:<br>
+        erenakkoc.com.tr<br>
+        Konaklar 61, Trabzon<br>
+        Turkey
+    </address>
+
+    <br><br><br>
+
+    <bdo dir="rtl">This text will be written from right to left</bdo>
+
+    <br><br><br>
+
+    <!-- This is a comment -->
+    <h1 style="border:2px solid Tomato;">Hello World</h1>
+    <xmp>
+        <h1 style="border:2px solid Tomato;">Hello World</h1>
+    </xmp>
+
+    <br><br><br>
+
+    <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+    <xmp>
+        <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+        
+        _self: Varsayılan. Belgeleri tıklandığı aynı pencere veya sekmede açar.
+        _blank: Belgeleri yeni bir pencere veya sekmede açar.
+        _parent: Belgeleri üst çerçevede (parent frame) açar.
+        _top: Belgeleri pencerenin tamamında (tam pencere) açar.
+    </xmp>
+
+    <br><br><br>
+
+    <a href="mailto:someone@example.com">Send email</a>
+    
+    <br><br><br>
+
+    <button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+    <br><br><br>
+
+    Sayfa çok uzun olduğu için aşağıya gitmek için <xmp><a href="#son">Sayfa Sonuna İn</a></xmp> şeklinde kullanabiliriz.
+    Hatta başka bir sayfadaki etikete de ulaşabilirsiniz <xmp><a href="2.%20Project/index.html#son">Sayfa Sonuna İn</a></xmp>
+
+    <br><br><br>
+
+    <p style="background-image: url('source/image1.png');">M<br>e<br>r<br>h<br>a<br>b<br>a</p>
+
+    <br><br><br>
+
+    <picture>
+        <source srcset="source/image1.png" media="(min-width: 100px)">
+        <source srcset="source/image2.png" media="(min-width: 100px)">
+        <img src="source/image3.png" alt="Flowers">
+    </picture>
+
+    <br><br><br>
+
+    <table style="border-collapse: collapse; border: 2px solid black; width: 100%;">
+        <tr>
+            <th style="width: 70%;">İsim</th>
+            <th>Soyisim</th>
+            <th>İl</th>
+        </tr>
+        <tr>
+            <td>Eren</td>
+            <td>Akkoc</td>
+            <td>Trabzon</td>
+        </tr>
+        <tr>
+            <td>Ali</td>
+            <td>Veli</td>
+            <td>İstanbul</td>
+        </tr>
+
+    </table>
+
+    <br><br><br>
+
+    <ul>
+        <li>Madde 1</li>
+        <li>Madde 2</li>
+        <li>Madde 3</li>
+    </ul>
+
+    <ol>
+        <li>Madde 1</li>
+        <li>Madde 2</li>
+        <li>Madde 3</li>
+    </ol>
+
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+    </dl>
+
+    <ul style="list-style-type:circle;">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <ol start="50">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <br><br><br><br><br>
+
+    <span>Hello World !</span>
+
+    <br><br><br><br><br><br>
+
+    <div class="City">
+        <h3>Sivas</h3>
+        <p>Sivas, Türkiye'nin İç Anadolu Bölgesi'nde yer alan bir şehirdir. Sivas, tarihi ve kültürel zenginlikleriyle önemli bir şehirdir.</p> 
+    </div>
+
+    <div id="City2">
+        <h3>Kayseri</h3>
+        <p>Kayseri, Türkiye'nin İç Anadolu Bölgesi'nde yer alan bir şehirdir. Kayseri, tarihi ve kültürel zenginlikleriyle önemli bir şehirdir.</p>
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <iframe src="2. Project/index.html" frameborder="2" width="600" title="Diğer Sayfa"></iframe>
+
+    <br><br><br><br><br><br>
+
+    <p>Tarih Ve Saat: <span id='tarih'></spantarih></p>
+    
+    <br><br><br><br><br>
+
+
+    <picture>
+        <source srcset="source/image1.png" media="(max-width: 600px)">
+        <source srcset="source/image2.png" media="(max-width: 1500px)">
+        <source srcset="source/image3">
+        <img src="img_smallflower.jpg" alt="Flowers">
+    </picture>
+
+    <br><br><br><br><br><br>
+
+    <p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+
+    <br><br><br><br><br><br>
+
+    <p>Message from my computer:</p>
+    <p><samp>File not found.<br>Press F1 to continue</samp></p>
+
+    <br><br><br><br><br><br>
+
+    <section>
+        <h1>WWF</h1>
+        <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+        </section>
+        
+        <section>
+        <h1>WWF's Panda symbol</h1>
+        <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+    </section>
+
+    <article>
+        <h2>Google Chrome</h2>
+        <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+        </article>
+        
+        <article>
+        <h2>Mozilla Firefox</h2>
+        <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+        </article>
+        
+        <article>
+        <h2>Microsoft Edge</h2>
+        <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+    </article>
+
+    <footer>
+        <p>Author: Hege Refsnes</p>
+        <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+    </footer>
+
+
+    <nav>
+        <a href="/html/">HTML</a> |
+        <a href="/css/">CSS</a> |
+        <a href="/js/">JavaScript</a> |
+        <a href="/jquery/">jQuery</a>
+    </nav>
+
+
+    <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+    <aside>
+    <h4>Epcot Center</h4>
+    <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+    </aside>
+
+    <br><br><br><br><br><br>
+
+    <h1>HTML Forms</h1>
+    <p><xmp><form></form></xmp> Etiketi sayfada kullanıcıdan bilgi almayı sağlar.</p>
+    <p><xmp><input></xmp> Etiketi en çok kullanılan form etiketidir.</p>
+    İçerisinde çok sayıda özelliği bulunmaktadır. <br>
+    <input type="button"><br>
+    <input type="checkbox"><br>
+    <input type="color"><br>
+    <input type="date"><br>
+    <input type="datetime-local"><br>
+    <input type="email"><br>
+    <input type="file"><br>
+    <input type="hidden"><br>
+    <input type="image"><br>
+    <input type="month"><br>
+    <input type="number"><br>
+    <input type="password"><br>
+    <input type="radio"><br>
+    <input type="range"><br>
+    <input type="reset"><br>
+    <input type="search"><br>
+    <input type="submit"><br>
+    <input type="tel"><br>
+    <input type="text"><br>
+    <input type="time"><br>
+    <input type="url"><br>
+    <input type="week"><br>
+    
+    <br><br><br><br><br><br>
+
+    <xmp><label></label></xmp> etiketini kullanarak form elemanlarına etiket ekleyebiliriz.
+    <form >
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname">
+    </form>
+
+    <br><br><br><br><br><br>
+
+    <p>Choose your favorite Web language:</p>
+
+    <form>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+    </form>
+
+    <br><br>
+
+    <form>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label>
+    </form>
+
+    <br><br><br><br><br>
+
+    <select name="carlist" id="carlist" size="4" multiple>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes"selected>Mercedes</option>
+        <option value="audi">Audi</option>
+    </select>
+
+    <br><br><br><br><br>
+
+    <textarea name="message" rows="10" cols="30">
+        The cat was playing in the garden.
+    </textarea>
+
+    <br><br>
+
+    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+    <br><br>
+
+    <form action="/action_page.php">
+        <fieldset>
+          <legend>Personalia:</legend>
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" value="Eren"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" value="Akkoç"><br><br>
+          <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <br><br>
+
+    <form action="/action_page.php">
+        <input list="browsers">
+        <datalist id="browsers">
+          <option value="Edge">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist>
+    </form>
+
+    <br><br>
+
+    <form action="/action_page.php"
+    oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    0
+        <input type="range"  id="a" name="a" value="50">
+        100 +
+        <input type="number" id="b" name="b" value="50">
+        =
+        <output name="x" for="a b"></output>
+        <br><br>
+        <input type="submit">
+    </form>
+
+    <br><br>
+
+    <form>
+        <label for="points">Points:</label>
+        <input type="number" id="points" name="points" step="3">
+    </form>
+
+    <br><br>
+
+    <form action="/action_page_binary.asp" method="post">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <input type="submit" value="Submit">
+        <input type="submit" formenctype="multipart/form-data"
+        value="Submit as Multipart/form-data">
+    </form>
+
+    <br><br>
+
+    css'de idler için # kullanılırken classlar için . kullanılır.
+
+
+    <br><br><br><br><br><br><br><br><br><br>
+    <h1 id="son">Sona Geldiniz</h1>
+    <script>
+        document.getElementById('tarih').innerHTML = Date();
+        document.getElementById("tarih").style.fontSize = "25px";
+    </script>
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+</body>
+</html>
